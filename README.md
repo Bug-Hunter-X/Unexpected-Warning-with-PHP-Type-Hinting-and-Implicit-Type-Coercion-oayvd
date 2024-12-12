@@ -1,0 +1,3 @@
+# PHP Type Hinting and Implicit Type Coercion Bug
+
+This repository demonstrates a subtle bug in PHP related to type hinting, implicit type coercion, and function return values. The `bar` function calls `foo`, which returns an integer. However, when a zero is passed, the implicit type conversion within `foo` function might generate a warning even though the final result is still correct. The issue highlights the need for careful consideration of type handling and potential unexpected behaviors in PHP.
